@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9333EA"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="url(#g)"/>
+  <g transform="translate(40,48)" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <!-- Battery body -->
+    <rect x="16" y="32" width="144" height="96" rx="16" opacity="0.9"/>
+    <!-- Battery nub -->
+    <rect x="160" y="56" width="16" height="48" rx="6" opacity="0.9"/>
+    <!-- Bolt -->
+    <path d="M104 44 L72 88 h24 l-16 36 40-52 h-24 z" fill="#fff" stroke="none"/>
+  </g>
+</svg>
