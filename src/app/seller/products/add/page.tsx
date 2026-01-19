@@ -1,6 +1,13 @@
-import { AddProduct } from "../../../../pages/seller/AddProduct";
-
 export default function Page() {
-  return <AddProduct />;
+  return (
+    <section className="py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-2xl font-bold mb-4">Add Product</h1>
+        <p className="text-muted-foreground">
+          Product creation UI is coming soon. This is a temporary placeholder page.
+        </p>
+      </div>
+    </section>
+  );
 }
 
