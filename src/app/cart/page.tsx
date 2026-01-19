@@ -1,6 +1,13 @@
-import { Cart } from "../../pages/buyer/Cart";
-
 export default function Page() {
-  return <Cart />;
+  return (
+    <section className="py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-2xl font-bold mb-4">Cart</h1>
+        <p className="text-muted-foreground">
+          Shopping cart UI is disabled for now. We will enable this soon.
+        </p>
+      </div>
+    </section>
+  );
 }
 
